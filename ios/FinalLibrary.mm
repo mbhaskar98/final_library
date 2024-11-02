@@ -6,6 +6,19 @@
 @implementation FinalLibrary
 RCT_EXPORT_MODULE()
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        bool isNewArch = false;
+#ifdef RCT_NEW_ARCH_ENABLED
+        isNewArch = true;
+#endif
+        NSLog(@"Is new Arch?:%d", isNewArch);
+    }
+    return self;
+}
+
 // Example method
 // See // https://reactnative.dev/docs/native-modules-ios
 RCT_EXPORT_METHOD(multiply:(double)a
@@ -23,8 +36,8 @@ RCT_EXPORT_METHOD(revertString:(NSString*)str
                   reject:(RCTPromiseRejectBlock)reject)
 {
     std::string originalString = str.UTF8String;
+    NSLog(@"Original String %@", str);
     std::reverse(originalString.begin(), originalString.end());
-    NSLog(@"Original String");
     str = [NSString stringWithFormat:@"%s", originalString.c_str()];
     resolve(str);
 }

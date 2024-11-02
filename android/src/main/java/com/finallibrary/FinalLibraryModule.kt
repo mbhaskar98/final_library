@@ -1,11 +1,16 @@
 package com.finallibrary
 
+import android.util.Log
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
 
 class FinalLibraryModule internal constructor(context: ReactApplicationContext) :
   FinalLibrarySpec(context) {
+
+  init {
+      Log.d(TAG, "Is new Arch?:${BuildConfig.IS_NEW_ARCHITECTURE_ENABLED}")
+  }
 
   override fun getName(): String {
     return NAME
@@ -25,5 +30,6 @@ class FinalLibraryModule internal constructor(context: ReactApplicationContext) 
 
   companion object {
     const val NAME = "FinalLibrary"
+    const val TAG = "FINAL_LIB_LOG"
   }
 }
