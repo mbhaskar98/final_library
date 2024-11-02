@@ -27,3 +27,7 @@ const FinalLibrary = FinalLibraryModule
 export function multiply(a: number, b: number): Promise<number> {
   return FinalLibrary.multiply(a, b);
 }
+
+export function revertString(s: string): Promise<string> {
+  return FinalLibrary.revertString(s);
+}

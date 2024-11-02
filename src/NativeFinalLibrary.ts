@@ -3,6 +3,7 @@ import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
   multiply(a: number, b: number): Promise<number>;
+  revertString(s: string): Promise<string>;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('FinalLibrary');
