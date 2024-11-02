@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "final_library": ["./src/index"]
+      "final_library_1": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

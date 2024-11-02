@@ -18,6 +18,11 @@ class FinalLibraryModule internal constructor(context: ReactApplicationContext) 
     promise.resolve(a * b)
   }
 
+  @ReactMethod
+  override fun revertString(s: String, promise: Promise) {
+    promise.resolve(s.reversed())
+  }
+
   companion object {
     const val NAME = "FinalLibrary"
   }

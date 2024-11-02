@@ -8,4 +8,5 @@ abstract class FinalLibrarySpec internal constructor(context: ReactApplicationCo
   ReactContextBaseJavaModule(context) {
 
   abstract fun multiply(a: Double, b: Double, promise: Promise)
+  abstract fun revertString(s: String, promise: Promise)
 }
