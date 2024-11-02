@@ -6686,9 +6686,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"final_library@workspace:.":
+"final_library_1@workspace:.":
   version: 0.0.0-use.local
-  resolution: "final_library@workspace:."
+  resolution: "final_library_1@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0
