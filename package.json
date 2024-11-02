@@ -1,6 +1,6 @@
 {
   "name": "final_library_1",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Final NPM library ",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
