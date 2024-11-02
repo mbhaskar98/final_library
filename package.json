@@ -42,7 +42,7 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "bob build && npx rimraf node_modules/final_library_1/ios/generated/build/generated/ios/FBReactNativeSpec* node_modules/final_library_1/ios/generated/build/generated/ios/RCTModulesConformingToProtocolsProvider*",
+    "prepare": "bob build && npx rimraf ios/generated/build/generated/ios/FBReactNativeSpec* ios/generated/build/generated/ios/RCTModulesConformingToProtocolsProvider*",
     "release": "release-it"
   },
   "keywords": [
